@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefly</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b5e34f84f0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-cont">
+        <h1 class="head">The choice is your's. <br /> Because they don't have one</h1>
+        <button class="btn btn-primary q-btn">Quick View</button>
+    </div>
+
+    <div class="about">
+        <div class="horizontal-line">
+            <div></div>
+            <h2>About</h2>
+            <div></div>
+        </div>
+        <div class="about-img-cont">
+            <img src="https://res.cloudinary.com/dwvzomy9w/image/upload/v1719043135/Frame_ndokrg.png" />
+            <div>
+                <p>Our products are crafted exclusively from the dreams and screams of young kids who wanted to show their mastery in their chosen fields, but were directed towards a factory for daily wages. Each cracker bursts brighter than their lost smiles, and can be heard louder than their cries for miles. Buy them, burst them, brag about them.</p>
+                <p class="p-b">The choice is your's. Beacause they don't have one.</p>
+            </div>
+            <img src="https://res.cloudinary.com/dwvzomy9w/image/upload/v1719043135/Frame_ndokrg.png" />
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="horizontal-line">
+            <div></div>
+            <h2>Our products</h2>
+            <div></div>
+        </div>
+        <div class="product" data-large="raju_rassibomb_large.png">
+            <img src="https://res.cloudinary.com/dwvzomy9w/image/upload/v1719039227/Frame_-1_w74kue.png" alt="Raju Rassibomb" class="img" />
+            <div class="about-img-cont">
+                <h4>Raju Rassibomb</h4>
+                <button class="bt-quick">Quick View</button>
+            </div>
+        </div>
+        <div class="product" data-large="ladyion_ki_rani_chani_large.png">
+            <img src="https://res.cloudinary.com/dwvzomy9w/image/upload/v1719039227/Frame_-1_w74kue.png" alt="Ladyion ki Rani Chani" class="img" />
+            <div class="about-img-cont">
+                <h4>Ladyion ki Rani Chani</h4>
+                <button class="bt-quick">Quick View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="follow-us-section pt-5 pb-5" id="followSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us On</h1>
+                    <div class="follow-cont">
+                        <div class="follow-us-icon-container">
+                            <i class="fa-brands fa-twitter icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fa-brands fa-instagram icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fa-brands fa-facebook icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fa-brands fa-youtube icon"></i>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <img src="" alt="Product Image" id="modal-image" />
+                <div class="modal-details">
+                    <h3 id="modal-title">Product Title</h3>
+                    <h4>MRP: <span id="modal-mrp">₹0.00</span></h4>
+                    <h4>Raju Dreams</h4>
+                    <div class="horizontal-line"></div>
+                    <h4>Product Description</h4>
+                    <p id="modal-description">This is a detailed description for the product.</p>
+                    <div class="horizontal-line"></div>
+                    <h4>Product Contents</h4>
+                    <ul id="modal-contents" class="ul-list">
+                        <li>Content 1</li>
+                        <li>Content 2</li>
+                        <li>Content 3</li>
+                    </ul>
+                    <div class="horizontal-line"></div>
+                    <h4>Shipping Time</h4>
+                    <p id="modal-shipping"></p>
+                    <button class="bt-quick">Choose Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
